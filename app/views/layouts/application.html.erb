@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Anúncios: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag "default.css"%>
+  <%= image_tag "bg.png" %>
+  <%= image_tag "bgFooter.png"%>
+  <%= image_tag "bgHeader.png"%>
+  <%= image_tag "logo.png"%>
+  <%= image_tag "rails.png"%>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div>
+
+        <h1>MeBay</h1>
+        <ul id="nav">
+          <li><a href="/ads/">All ads</a></li>
+        </ul>
+      </div>
+
+      <div id="conter">
+        <%= yield %>
+      </div>
+      <div id="clearfooter"></div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
